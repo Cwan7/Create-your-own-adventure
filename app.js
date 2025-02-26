@@ -122,5 +122,16 @@ let userLocation = prompt('Which State do you live in (abbreviation only)?');
     }else{
         console.log('That isnt a state, please start over!')
     }
-console.log('Now that we know alot about you, lets go on a quest for prime numbers!');
-const doors = prompt('')
+console.log(`Now that we know alot about you, we regrete to inform you that the Govenor of ${userLocation} has been Kidnapped`);
+const yesOrNo = prompt(`You can save them ${username}! All you have to do is pick a number, want to try Yes or No?`);
+const userNum = prompt(`You get 1 attemp. Pick a number greater then 500. If its Prime, you're a hero!!`)
+    function primeNumber(userNum) {
+    for (let i = 2; i <= Math.sqrt(userNum); i++) {
+        if (userNum % i === 0) {
+            return 'Sorry but the Govenor is Ours unless you pay $1,000,000';
+            break;
+        } 
+    }
+    return 'Prime Number!! You saved the Govenor';
+    }
+    console.log(primeNumber(userNum));
