@@ -130,8 +130,38 @@ let yesOrNo = prompt(`You can save them ${username}! All you have to do is pick 
                 function primeNumber(userNum) {
                 for (let i = 2; i <= Math.sqrt(userNum); i++) {
                     if (userNum % i === 0) {
-                        return 'Sorry but the Govenor is Ours unless you pay $1,000,000';
-                        break;
+                        let canYouPay = prompt('NOT PRIME. The govenor is ours unless you pay $1,000,000. Can you pay it? YES OR NO?')
+                        canYouPay = canYouPay.toUpperCase();
+                        if (canYouPay ==='YES') {
+                            return prompt('Congrates! You are a HERO!')
+                        } else if (canYouPay ==='NO') {
+                            let make$ = prompt('Seems you need to make some money, I have a job for you if you accept? Yes or no?');
+                            make$ = make$.toUpperCase();
+                            if (make$ ==='NO') {
+                                return prompt(`${username} you had a chance to be a HERO, Sorry`)
+                            } else if (make$ ==='YES') {
+                                let dayOrNight = prompt(`Theres a house at the end of Race Street. In the house is a speical book I need. Steal it and the Govenor is yours. You want to start Tonight or Tomorrow?`);
+                                dayOrNight = dayOrNight.toUpperCase(); //tonight or tomorrow
+                                if (dayOrNight ==='TONIGHT') {
+                                    let frontBack = prompt(`You are at the house, will you enter through the front or back?`);
+                                    frontBack = frontBack.toUpperCase();//front back
+                                    if (frontBack ==='FRONT') {
+                                        let pickOrBreak = prompt('The front door is locked, will you pick the lock or break the window? Pick or Break?');
+                                        pickOrBreak = pickOrBreak.toUpperCase();//pick 
+                                        if (pickOrBreak ==="BREAK") {
+                                            return 'Dogs start BARKING and cops are called. Mission Over'
+                                        } else if (pickOrBreak ==='PICK') {
+                                            let frontDoor = prompt('You get in, Do you want to go upstairs or downstairs?')
+                                            frontDoor = frontDoor.toUpperCase(); //Upstairs or down
+                                            if (frontDoor ==='UPSTAIRS') {
+                                                let upHallway = prompt('')
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                        }                       
                     } 
                 }
                 return 'Prime Number!! You saved the Govenor';
