@@ -3,7 +3,7 @@ const username = prompt('What is your name? ');
 console.log(`Your name is ${username}`);
 const userAge = prompt('How many years have you been on this earth?');   
 console.log(`Your name is ${username} and you are ${userAge} years old`);
-let userLocation = prompt('Which State do you live in(abbreviation only)?');
+let userLocation = prompt('Which State do you live in (abbreviation only)?');
     userLocation = userLocation.toUpperCase();
     if (userLocation === 'CT' || userLocation === 'ME' || userLocation === 'MA' || userLocation ==='NH' || userLocation ==='NJ'
         || userLocation =='NY' || userLocation ==='PA' || userLocation ==='RI' || userLocation ==='VT') {
@@ -14,7 +14,7 @@ let userLocation = prompt('Which State do you live in(abbreviation only)?');
                 newYork = newYork.toUpperCase();
                 if (newYork ==='PIZZA') {
                     console.log(`Minerals present in New York City's tap water supply are credited with giving the dough in metro area pizzas its characteristic texture and flavor.`)
-                } else if (newYork ==='Bagels') {
+                } else if (newYork ==='BAGELS') {
                     console.log('The first New York bagels were orginally 1/3rd the size they are today')
                 } else {
                     console.log('That wasnt one of the options.')
@@ -122,4 +122,5 @@ let userLocation = prompt('Which State do you live in(abbreviation only)?');
     }else{
         console.log('That isnt a state, please start over!')
     }
-console.log('AT THE END');
+console.log('Now that we know alot about you, lets go on a quest for prime numbers!');
+const doors = prompt('')
